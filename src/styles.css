@@ -24,10 +24,12 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 nav ul li {
   margin: 0 15px;
+  position: relative;
 }
 
 nav ul li a {
@@ -40,6 +42,36 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #d3d3d3;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #006400;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.submenu li a:hover {
+  color: #d3d3d3;
+}
+
+nav ul li:hover .submenu {
+  display: block;
 }
 
 .title {
