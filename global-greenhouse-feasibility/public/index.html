@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Global Greenhouse Feasibility</title>
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">GHF Model</div>
+    <div class="nav-group-title">Inputs</div>
+    <button class="nav active" data-page="project">Project</button>
+    <button class="nav" data-page="greenhouse">Greenhouse</button>
+    <button class="nav" data-page="crop">Crop & Market</button>
+    <button class="nav" data-page="energy">Energy & CO₂</button>
+    <button class="nav" data-page="opex">Labour & OPEX</button>
+    <button class="nav" data-page="capex">CAPEX</button>
+    <button class="nav" data-page="financing">Financing</button>
+    <div class="nav-group-title analysis">Analysis</div>
+    <button class="nav" data-page="results">Results</button>
+    <button class="nav" data-page="sensitivity">Sensitivity</button>
+    <button class="nav" data-page="report">Report</button>
+  </aside>
+  <main class="main">
+    <section id="project" class="page active">
+      <h1>Project</h1><p class="subtitle">Define project identity, location and initiator</p>
+      <div class="card"><h2>Project Identification</h2><div class="grid" id="projectIdentification"></div></div>
+      <div class="card"><h2>Project Location</h2><div class="grid" id="projectLocation"></div></div>
+      <div class="card"><h2>Project Initiator</h2><div class="grid" id="projectInitiator"></div></div>
+    </section>
+    <section id="greenhouse" class="page">
+      <h1>Greenhouse</h1><p class="subtitle">Physical project configuration and installed systems</p>
+      <div class="card"><h2>Project Footprint</h2><div class="grid" id="greenhouseFootprint"></div></div>
+      <div class="card"><h2>Greenhouse Structure</h2><div class="grid" id="greenhouseStructure"></div></div>
+      <div class="card"><h2>Installed Systems</h2><div class="grid" id="greenhouseSystems"></div></div>
+    </section>
+    <section id="crop" class="page"><h1>Crop & Market</h1><div class="card"><div class="grid" id="cropFields"></div></div></section>
+    <section id="energy" class="page"><h1>Energy & CO₂</h1><div class="card"><div class="grid" id="energyFields"></div></div></section>
+    <section id="opex" class="page"><h1>Labour & OPEX</h1><div class="card"><div class="grid" id="opexFields"></div></div></section>
+    <section id="capex" class="page"><h1>CAPEX</h1><div class="card"><div id="capexFields"></div></div></section>
+    <section id="financing" class="page"><h1>Financing</h1><div class="card"><div class="grid" id="financeFields"></div></div></section>
+    <section id="results" class="page"><h1>Results</h1><div class="kpis" id="kpis"></div><div class="card table-scroll"><table id="resultsTable"></table></div></section>
+    <section id="sensitivity" class="page"><h1>Sensitivity</h1><div class="card table-scroll" id="sensitivityMatrix"></div></section>
+    <section id="report" class="page"><h1>Institutional Report</h1><div class="card" id="reportContent"></div></section>
+  </main>
+</div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
