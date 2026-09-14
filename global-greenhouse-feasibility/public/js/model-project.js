@@ -1,0 +1,23 @@
+export const project = {
+  name: 'Global Greenhouse Feasibility',
+  code: 'GHF-001',
+  currency: 'CAD',
+  growingArea: 77788.26,
+  projectLife: 30,
+  country: 'Canada',
+  stateProvince: '',
+  city: '',
+  postalCode: '',
+  street: '',
+  streetNumber: '',
+  latitude: '',
+  longitude: '',
+  initiatorCompany: '',
+  initiatorLegalName: '',
+  registrationNo: '',
+  initiatorContact: '',
+  initiatorRole: '',
+  initiatorEmail: '',
+  initiatorPhone: '',
+  initiatorWebsite: ''
+};
